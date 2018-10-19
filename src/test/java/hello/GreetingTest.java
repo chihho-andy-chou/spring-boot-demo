@@ -1,5 +1,5 @@
-import junit.framework.TestCase;
 import hello;
+
 
 @RunWith(SpringRunner.class)
 public class GreetingTest {
