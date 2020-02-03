@@ -1,6 +1,4 @@
-package test;
-
-import main.hello.Greeting;
+import hello.Greeting;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;

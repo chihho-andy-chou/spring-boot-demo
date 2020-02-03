@@ -1,4 +1,4 @@
-package main.hello;
+package hello;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,8 +12,8 @@ public class GreetingController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Greeting(counter.incrementAndGet(),
+    public hello.Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
+        return new hello.Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
 }
